@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Bodoni+Moda:ital,opsz@1,6..96&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+
+    --color-font: rgb(51, 51, 51);
+    --color-fondo: rgb(161, 154, 254);
+
+}
+
+
+[tema="dark"] {
+
+    --color-font: rgb(0, 0, 0);
+    --color-fondo: rgb(255, 255, 255);
+
+}
+
+
+.contMenu,
+.menuRight,
+.menuShow,
+.contMenuHiden,
+.conMenuShowItems,
+.header,
+.contHeader,
+.redes,
+.contRedes,
+.redItem,
+.redItemBottom,
+.redItemTop,
+.search,
+.contSearch,
+.SearchBottom,
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contMenu {
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0px 100px 0px 100px;
+    position: fixed;
+    
+}
+
+.menuRight {
+    width: 10%;
+    min-width: 150px;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.menuIcon {
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.menuLeftH2{
+    color: black;
+}
+
+.menuIcon:hover {
+    background: rgb(241, 228, 152);
+}
+
+
+.searchIcon {
+    width: 45px;
+    padding: 10px;
+    border-radius: 50px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.searchIcon:hover {
+    background: rgb(255, 209, 125);
+}
+
+.menuShow {
+    width: 100%;
+    left: 0;
+    top: -30%;
+    background: red;
+
+    justify-content: space-between;
+    padding: 0px 100px 0px 100px;
+    background: rgb(0, 0, 0, 0.9);
+    transition: all .7s ease-in;
+    flex-direction: column;
+    position: fixed;
+}
+
+.contMenuHiden {
+    width: 100%;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+.showMenu {
+    top: 0%;
+    opacity: 100%;
+}
+
+.menuFirstIcon {
+    background: rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.menuFirstIcon:hover {
+    background: rgb(155, 255, 125);
+}
+
+.menuFirstH1 {
+    color: rgb(255, 255, 255);
+}
+
+.conMenuShowItems {
+    width: 50%;
+    justify-content: space-between;
+
+}
+
+.menuShowLi {
+    list-style: none;
+    height: 5vh;
+}
+
+.menuShowA {
+    text-decoration: none;
+    color: rgb(165, 165, 165);
+    height: 5vh;
+}
+
+.menuShowA:hover {
+    color: rgb(255, 255, 255);
+}
+
+/*Inician estilos del header*/
+
+.header {
+    width: 100%;
+    background-image: radial-gradient(circle, #eefff3, #e7ffee, #e0ffe9, #d8ffe4, #d1ffdf);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.contHeader {
+    width: 70%;    
+    align-items: flex-start;
+}
+
+.headerText {
+    gap: 10px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contHeaderH3 {
+    font-family: 'Amatic SC', sans-serif;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;    
+}
+
+.contHeaderH4 {
+    font-size: 1rem;
+    margin: 20px 0px 20px 0px;    
+}
+
+
+.headerImg {
+    width: 100%;
+    height: 10vh;
+}
+
+/* inician estilos redes sociales */
+
+.redes{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle, #cdeeeb, #bce1dd, #abd3d0, #9ac6c2, #89b9b5);
+    flex-direction: column;
+}
+
+.contRedes{
+    width: 60%;
+    height: 70vh;    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 0px 100px 0px;
+}
+
+.redItem{    
+    width: 40%;
+    height: 40vh;
+    flex-direction: column;
+    margin: 10px 0px 10px 0px;     
+}
+
+.redItemBottom{
+    width: 100%;
+    background: #333;
+    height: 20vh;
+}
+
+.redItemBottomH1{
+    color: rgb(255, 255, 255);
+}
+
+.redItemTop{
+    width: 100%;
+    background: rgb(255, 255, 255);    
+}
+
+.redesH1{
+    font-size: 3rem;
+}
+
+/*inician estilos para la busqueda*/
+
+.search{
+    width: 100%;
+    height: 100vh;
+    background-image: radial-gradient(circle, #ffffff, #f7f1ff, #f3e2ff, #f3d2ff, #f7c0ff);
+}
+
+.contSearch{
+    background: #333;
+    width: 70%;    
+    height: 40vh;
+    flex-direction: column;
+    border-radius: 40px;
+}
+
+.searchH1{
+    color: white;
+    margin: 10px 0px 40px 0px;
+    font-size: 2rem;
+}
+
+.lupaIconSearch{
+    width: 60px;
+    background: white;
+    border-radius: 40px 0px 0px 40px;
+
+}
+
+.inputSearch{
+    border: none;
+    outline: none;
+    background: white;
+    width: 450px;
+    height: 60px;
+    border-radius: 0px 40px 40px 0px;
+    font-size: 2rem;
+    padding-left: 10px;
+}
+
+/*incian estilos del footer*/
+
+.footer{
+    width: 100%;
+    height: 40vh;
+    background: #333;
+    gap: 20px;
+}
+
+.footerH1{
+    color: rgb(165, 165, 165);
+    cursor: pointer;
+}
+
+.footerH1:hover{
+    color: rgb(255, 255, 255);
+}
